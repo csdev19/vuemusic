@@ -1,0 +1,39 @@
+El archivo package.json tiene:
+|
+|-> dependencias generales: Son las que siempre se usaran en el proyecto
+|
+|-> dependencias de desarrollo: Solo se usan el momento de dearrollar la
+aplicacion son herramientas librerias que nos ayudan a escribir nustro codigo
+(por ejemplo: babel-core, stylus, etc)
+
+Y para configurar cada una se usan comados en el cli
+|
+|-> npm install --save-dev >> esto hace que se guarde dentro de la seccion dev
+porque solo lo usaremos en la construccion del proyecto(dependencias de
+desarrollo)
+|
+|
+
+Instalando pug y stylus
+|
+|-> npm install --save-dev pug
+|
+|-> npm install --save-dev pug-loader >> para que webpack lo reconozca
+|
+|-> npm install --save-dev pug pug-loader >> version corta
+|
+|
+|-> npm install --save-dev stylus
+|
+|-> npm install --save-dev stylus-loader
+|
+|-> npm install --save-dev pug pug-loader stylus stylus-loader >>> version
+supercorta
+|
+|-> para indicarle al template que trabajaremos en pug haremos <template
+lang="pug">
+|
+|-> y para stylus <style lang="stylus">
+|
+
+
